@@ -24,6 +24,40 @@
 ![](https://github.com/chrisopal/writings/blob/master/img/javaee-version-history.png)
 > 图为：Java EE各版本历史和每个版本的时间间隔
 
+### 功能特点
+
+Java EE历来是企业级应用开发的重要框架，它在事务，安全，扩展性，并发，部署管理等各方面都建立起了完善的标准和规范，同时IMB，Redhat，Oracle等公司的各种实现Java EE标准的应用服务器，使得便捷的管理传统企业应用的开发部署.众多功能特点依然是应用开发的必备：
+> * CDI
+> * JAX-RS
+> * JPA / JTA
+> * EJB (Version 3.0)
+> * Bean Validation
+> * Interceptors, Annotations, Concurrency Unitity
+> * Security API
+
+其实谈到Java EE，绕不开的还是Spring，Java EE加上Spring统治着企业级Java应用开发，两者之间无关优劣，就像[Adam Bien](http://adam-bien.com/)说的，这是两种不同的哲学。但是Spring对于Java EE的影响是显而易见的：
+> * Spring和Hibernate提供了全新的开发方式，直接催生了EJB 3和JPA 1，而这两者正是Java EE 5的创新。
+> * Spring依赖注入是Java EE CDI构建的基础。
+> * Spring Batch并入了JBatch的规范([JSR 352]( https://www.jcp.org/en/jsr/detail?id=352))。
+
+也正是因为Spring的快速发展和不断创新，特别是Spring Boot和Spring Cloud框架的建立使得Java开发者能快速开发微服务架构和云原生的应用。
+> * Spring Boot奉行约定大于配置的准则使得微服务开发的简单易用深入人心。
+> * Spring Cloud已经是云原生开发的重要平台，实现了服务注册和发现，负载均衡，监控等云原生的功能。
+
+还是回到开篇提到的，既然Spring已经如此优秀，Java EE依然是微服务和云原生应用开发的选择吗？答案依然也是肯定的。尽管从Java EE 5之后，版本发布放缓，更多的时间投入到标准和规范的制定，但是在Java EE 8中也进行的新功能的开发和升级。比如：
+> * CDI 2.0定义了在Java EE容器之外的CDI表现，使得在第三方库中依然适应反转控制。
+> * JAX-RS 2.1标准化了特别是在微服务开发中使用的功能，如SSE，NIO Providers(filter, Interceptor等)，响应式的异步客户端，超文本API优化。
+> * JSONP 1.1 和JSONB 1.0.更方便的处理JSON请求和响应。
+> * Severlet 4.0支持HTTP/2协议和最新的HTTP 1.1协议功能。
+
+尽管这些标准和功能都非常有用，但是还不足以像Spring Boot和Spring Cloud那样支持微服务和云原生应用的开发需求。为了解决这个问题，Java EE社区核心来说努力了两件事情：
+* 2016年中，[MicroProfile](https://microprofile.io/)项目创立；
+* 2018年4月，[Jakarta EE](https://jakarta.ee/)项目成为Java EE新发展起点。
+
+```
+"这不是结束，甚至不是结束的开始，而只是开始的结束." -- 丘吉尔
+```
+
 ## Jakarta EE
 
 
