@@ -87,14 +87,45 @@ MicroProfile的项目宗旨就是**优化企业级Java微服务架构**,具体�
 
 现在MicroProfile项目如此优秀，那么Java EE该如何走，MicroProfile创建的相关规范和功能如何引入到Java EE？答案是Jakarta EE。
 
-```
-" 这是最坏的时代，也是最好的时代。" 
-```
-
 ## Jakarta EE
 
+2019年9月，在IBM和Redhat的协助下，Oracle正式把Java EE贡献给Eclipse基金会，支持新的发展纪元已经开始。关于Jakarta EE，功能方面因为第一个版本就是Java EE 8，前面已经提过，就不在赘述。主要讲两点，认为是对整个Java EE发展至关重要的：全新的云原生愿景和开源软件的运作模式。
+
+### 云原生
+Java EE过去这么多年一直是构建企业级Java的重要平台，为了能够加速在云原生时代的企业应用开发，引领各厂商合作推动Java EE技术的发展，这是Jakarta EE的目标。从技术的角度来说，Jakarta EE的愿景有：
+
+ - 更好的支持微服务架构
+ - 面向云原生Java，无缝集成Docker和Kubernetes
+ - 加速Java EE技术的创新
+ - 构建富有活力的社区
+ - 提供生产级别的标准实现
+
+### Jakarta EE工作组
+
+在云原生时代，我们见证的众多开源项目的成功，诸如Kubernetes，Envoy，Spring Boot，强大的社区灵活有效的运作模式对于项目的成功至关重要。反观在Java EE时代，Oracle控制着版本发布的节奏，复杂繁琐的JCP审核流程，导致Java EE版本的发布和新功能的引入无比缓慢，这也是Jakarta EE试图改变的局面。
+
+当前Jakarta EE工作组的成员包括：Fujitsu, IBM, Oracle, Lightbend, Payara, Pivotal, Red Hat, Tomitribe和Webtide。在整个管理架构中有四个委员会，分别是指导委员会，标准委员会，市场和品牌委员会，企业需求委员会，各司其职，相互协作。
+在Eclipse基金会治下，工作组秉承自我管理的精髓，制定所有发布日常和计划，与此同时标准和规范的制定也完全以社区为导向，鼓励开发者，厂商和组织参与制定流程以此来反应社区的意志，通过快速迭代，在新版本中不断融入其它开源社区的功能创新，如MicroProfile，帮助开发者构建云原生应用。
+
+### 迁移
+
+从Java EE到Jakarta EE的迁移工作是巨大的，尽管面临着各种问题，过程相对比较顺利，主要的工作量是处理110多个代码库的迁移，具体的工作内容可以参考[这里](https://projects.eclipse.org/projects/ee4j)，具体工作：
+
+> * 检查内部所有的license是否正确。
+> * 分析所有三方依赖库，是否需要升级到最新版本以解决重要的Bug和安全问题。
+> * 基于Eclipse项目规范，进行相关标准和实现重命名。
+> * 问题列表的转移以保留相关历史和变化以免丢失前期工作。
+> * 构建编译和运行的基础设施环境，实现敏捷和持续集成。
+
+一旦所有工作完成，那么将建立一个完善的云原生的开源企业级Java平台，使得所有参与的开发者，厂商，组织等相互协作，避免厂商锁定。当前第一个Jakarta EE的版本是Java EE 8，同样运行时实现有：
+> * Open Liberty (https://openliberty.io/)
+> * Thorntail  (https://thorntail.io/)
+> * Payara (https://www.payara.fish/upstream_builds)
+
 ## 总结
-写了这么多，简短概况：Java EE发展遇到了各种问题，主要是微服务架构和云原生两大问题，为了更好的服务微服务架构成立了MicroProfile项目，专注于微服务架构标准的制定。为了快速创新和构建云原生企业级Java应用，更名为Jakarta EE。两者都由Eclipse基金会管理。因此如果想快速使用Java EE构建云原生的微服务架构，只需引入Java EE 8的对应依赖和MicroProfile相关依赖，选择任意运行时实现，即可开发部署微服务。
+写了这么多，简短概况：Java EE发展遇到了各种问题，主要是微服务架构和云原生两大问题，为了更好的服务微服务架构成立了MicroProfile项目，专注于微服务架构标准的制定。为了快速创新和构建云原生企业级Java应用，更名为Jakarta EE。两者都由Eclipse基金会管理。因此如果想快速使用Java EE构建云原生的微服务架构，只需引入Java EE 8的对应依赖和MicroProfile相关依赖，选择任意运行时实现，即可开发部署微服务，并且随意切换。
+现在有了Eclipse基金会的开源运作，MicroProfile和
+Jakarta EE两大项目齐头并进，Java EE在云原生和微服务时代，依然能够在企业级Java应用和Spring分庭抗礼吗？
 
 > Java EE, 未来可期
 
