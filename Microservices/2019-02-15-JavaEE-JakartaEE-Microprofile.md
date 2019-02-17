@@ -132,12 +132,12 @@ Jakarta EE两大项目齐头并进，Java EE在云原生和微服务时代，依
 ## 参考
 
 
-> [1]https://www.packtpub.com/application-development/hands-cloud-native-microservices-jakarta-ee
-> [2]https://microprofile.io
-> [3]https://jakarta.ee
-> [4]https://en.wikipedia.org/wiki/Java_Platform,_Enterprise_Edition
-> [5]https://projects.eclipse.org/proposals/eclipse-microprofile
-> [6]https://www.youtube.com/watch?v=Jemx1BrB45Y&t=1590s
+> * https://www.packtpub.com/application-development/hands-cloud-native-microservices-jakarta-ee
+> * https://microprofile.io
+> * https://jakarta.ee
+> * https://en.wikipedia.org/wiki/Java_Platform,_Enterprise_Edition
+> * https://projects.eclipse.org/proposals/eclipse-microprofile
+> * https://www.youtube.com/watch?v=Jemx1BrB45Y&t=1590s
 
 
 
